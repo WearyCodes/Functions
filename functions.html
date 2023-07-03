@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+</head>
+<body>
+    <script>
+function startprocess() {
+    console.log("Process Started.")
+}
+startprocess()
+startprocess()
+startprocess()
+const starty = function start(){
+    console.log("Process Started.")
+}
+starty()
+const processSpeed = 12235
+const printProcessTimeinSeconds = function () {
+    const processSpeedinSeconds = processSpeed / 1000
+    console.log("Time to complete:" + processSpeedinSeconds)
+
+    if (processSpeedinSeconds > 2){
+        console.log("Slow process detected! process time: " + processSpeedinSeconds)
+    }
+}
+printProcessTimeinSeconds()
+
+let totalSpeciesfound = 25
+function addOneSpecies(){
+    totalSpeciesfound++
+    console.log("New species found!")
+    return totalSpeciesfound
+}
+const newtotalspecies = addOneSpecies()
+console.log(totalSpeciesfound)
+
+let orangemackerels = 34
+function subtract1mack(){
+    orangemackerels--
+    return orangemackerels
+}
+subtract1mack()
+subtract1mack()
+subtract1mack()
+subtract1mack()
+const thismany = orangemackerels
+console.log(thismany)
+
+
+
+let zone1pop = 34
+let zone2pop = 15
+
+function SpeciesPopChange(species, zone1count, zone2count){
+    zone1pop = zone1count
+    zone2pop = zone2count
+    console.log(species + " Population: zone 1: " + zone1pop + " , zone 2: " + zone2pop)
+
+}
+SpeciesPopChange("Bottlenose Dolphin", 21, 27)
+
+
+let speciesname = "Spanish Shawl Nudibranch"
+console.log(speciesname[0])
+speciesname = "Sea Hare"
+let anotherSpeciesName = "Orca"
+console.log(speciesname[1])
+console.log(anotherSpeciesName[2])
+
+let entryone = "name"
+let entrytwo = "names"
+
+console.log(entryone[entryone.length - 1])
+console.log(entrytwo[entrytwo.length - 1])
+
+const speciesName = "Garibaldi"
+const weight = "2 lbs"
+const length = "15 in"
+
+const speciesfact = `The ${speciesName} weighs ${weight} and is ${length} long!`
+console.log(speciesfact)
+
+
+        </script>
+
+    
+</body>
+</html>
